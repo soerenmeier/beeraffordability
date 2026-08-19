@@ -1,0 +1,5 @@
+isPublic: false
+name: Endpoint
+scope:
+  - 'sites.6b9e4bf0-09c7-4a60-859e-53a218da1851:read' # BeerAffordability
+  - 'crelte.all:read'

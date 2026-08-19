@@ -1,0 +1,13 @@
+@use 'vars' as *;
+@use 'resets';
+
+html {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-smooth: always;
+}
+
+body {
+	padding: 1rem;
+	line-height: 1.4;
+}

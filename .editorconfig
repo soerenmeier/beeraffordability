@@ -1,0 +1,11 @@
+[*{graphql,yaml}]
+charset = utf-8
+end_of_line = lf
+indent_style = space
+indent_size = 2
+
+[*{js,ts,php,twig,svelte,json,md,css,scss,html}]
+charset = utf-8
+end_of_line = lf
+indent_style = tab
+indent_size = 4

@@ -1,0 +1,8 @@
+baseUrl: $PRIMARY_SITE_URL
+handle: default
+hasUrls: true
+language: en
+name: BeerAffordability
+primary: true
+siteGroup: c02cb380-908d-4c39-975d-e97bc52d6111 # BeerAffordability
+sortOrder: 1

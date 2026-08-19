@@ -1,0 +1,6 @@
+query ($siteId: [QueryArgument]) {
+  # header: globalSet(handle: "header", siteId: $siteId) {
+  header: crelteStarterGlobal(handle: "header", siteId: $siteId) {
+    title
+  }
+}

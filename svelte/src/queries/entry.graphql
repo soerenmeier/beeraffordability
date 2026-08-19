@@ -1,0 +1,12 @@
+query ($uri: [String], $siteId: [QueryArgument]) {
+  # entry(uri: $uri, siteId: $siteId) {
+  entry: crelteStarterEntry(uri: $uri, siteId: $siteId) {
+    id
+    siteId
+    url
+    sectionHandle
+    typeHandle
+    title
+    cpUrl
+  }
+}

@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+## Description: Run an npm command in the svelte directory
+## Usage: npm [command]
+## Example: "ddev npm install" or "ddev npm run dev"
+
+cd ./svelte && npm "$@"
