@@ -1,0 +1,159 @@
+allowLineBreaksInTitles: false
+color: null
+description: null
+fieldLayouts:
+  fbc50d7b-5213-4d9f-9752-fb960c7b5bca:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2026-09-23T22:38:26+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: ffeaceb2-43a4-4e13-bce1-29e84b2784ef # Quarter
+            handle: null
+            instructions: null
+            label: null
+            oldFieldUid: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 207d769e-0bbd-4db3-8ffe-e32caca5c5d6
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2026-09-23T22:38:26+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 82ef4528-cc1b-41d8-bde7-e0f7ef4501f6 # Country
+            handle: null
+            instructions: null
+            label: null
+            oldFieldUid: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e1db68bb-02ca-4b81-82da-47c8bd10e391
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2026-09-24T02:24:34+00:00'
+            elementCondition: null
+            heading: 'Local currency'
+            type: craft\fieldlayoutelements\Heading
+            uid: 9cefc809-c437-4b5a-a174-cb55c78bd14b
+            userCondition: null
+          -
+            dateAdded: '2026-09-24T02:24:34+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 241b2ef6-9c96-403e-bdda-3b4dea967916 # Currency
+            handle: null
+            instructions: null
+            label: null
+            oldFieldUid: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: de5091ef-0e85-4ac2-9ec6-d430711fd27c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2026-09-24T02:24:34+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 80be9466-bdfe-461c-9d47-6005ddfb20f8 # Local Price
+            handle: null
+            instructions: null
+            label: null
+            oldFieldUid: 80be9466-bdfe-461c-9d47-6005ddfb20f8 # Local Price
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a762abe3-1005-402f-8492-45246e3a0578
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2026-09-24T02:24:34+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 9bd6bbfc-6e16-4af1-8f3a-0dd4df579f30 # Local Wage
+            handle: null
+            instructions: null
+            label: null
+            oldFieldUid: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 574ecb71-c944-44af-9d99-6cf09c3c007e
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2026-09-24T02:24:34+00:00'
+            elementCondition: null
+            heading: USD
+            type: craft\fieldlayoutelements\Heading
+            uid: f89b1163-f054-48a4-9304-0bce2b680553
+            userCondition: null
+          -
+            dateAdded: '2026-09-23T22:40:11+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 3cb2c5ec-e4be-40f4-9a45-cd65f731eb27 # Price
+            handle: null
+            instructions: null
+            label: null
+            oldFieldUid: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 778ed70c-5272-4e89-a8fd-61e9aa48d6ba
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2026-09-23T22:40:11+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 14441b6e-2206-47dd-b664-543f831ddaa3 # Wage
+            handle: null
+            instructions: null
+            label: null
+            oldFieldUid: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 596bad25-30f2-4021-941b-4f0ef23f7c4e
+            userCondition: null
+            warning: null
+            width: 50
+        name: Content
+        uid: 74b13512-5123-4278-81b4-f3efb27d070b
+        userCondition: null
+    thumbFieldKey: null
+handle: datapoint
+hasTitleField: false
+icon: null
+name: Datapoint
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: '{quarter[0].title} - {country[0].title}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
+uiLabelFormat: '{title}'

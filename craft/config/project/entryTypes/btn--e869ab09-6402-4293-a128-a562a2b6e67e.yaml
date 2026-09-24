@@ -1,0 +1,43 @@
+allowLineBreaksInTitles: false
+color: null
+description: null
+fieldLayouts:
+  acc5583d-9a7e-477e-967f-31860bc56804:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2026-09-23T22:58:45+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 9b0eb533-30aa-484a-9a5e-37f1f10746fb # Link
+            handle: null
+            instructions: null
+            label: __blank__
+            oldFieldUid: 9b0eb533-30aa-484a-9a5e-37f1f10746fb # Link
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c3fe0a1b-86dc-420b-b9d4-35a3c0e80ca5
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 36de98f8-98f1-4f96-8f5e-f12e800a0af7
+        userCondition: null
+    thumbFieldKey: null
+handle: btn
+hasTitleField: false
+icon: computer-mouse
+name: Button
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: '{btnLink.label}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
+uiLabelFormat: '{title}'

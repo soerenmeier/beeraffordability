@@ -1,0 +1,6 @@
+query CountriesWithIds {
+  entries(section: "countries", limit: null) {
+    id
+    title
+  }
+}

@@ -1,5 +1,5 @@
 isPublic: false
-name: Endpoint
+name: Mutation
 scope:
   - 'sites.6b9e4bf0-09c7-4a60-859e-53a218da1851:read' # BeerAffordability
   - 'sections.05ccd371-b38d-424f-8ab8-b0af4a3da046:read' # Countries
@@ -9,4 +9,11 @@ scope:
   - 'nestedentryfields.c664c346-5d38-45f3-865a-00f913d4a977:read' # Intro
   - 'nestedentryfields.6d075d2a-2731-4b2b-8b36-3153c389fbf2:read' # Navigation
   - 'globalsets.c9fa2b5e-8aea-46d5-a1de-c417c7cbab7c:read' # Footer
-  - 'crelte.all:read'
+  - 'sections.05ccd371-b38d-424f-8ab8-b0af4a3da046:edit' # Countries
+  - 'sections.05ccd371-b38d-424f-8ab8-b0af4a3da046:create' # Countries
+  - 'sections.05ccd371-b38d-424f-8ab8-b0af4a3da046:save' # Countries
+  - 'sections.05ccd371-b38d-424f-8ab8-b0af4a3da046:delete' # Countries
+  - 'sections.e7450e6b-2ab7-4769-bd6d-5fd8a06bdebd:edit' # Datapoints
+  - 'sections.e7450e6b-2ab7-4769-bd6d-5fd8a06bdebd:create' # Datapoints
+  - 'sections.e7450e6b-2ab7-4769-bd6d-5fd8a06bdebd:save' # Datapoints
+  - 'sections.e7450e6b-2ab7-4769-bd6d-5fd8a06bdebd:delete' # Datapoints

@@ -1,0 +1,21 @@
+mutation SaveDatapoint(
+  $quarterId: [Int]
+  $countryId: [Int]
+  $price: Number
+  $wage: Number
+  $localCurrency: String
+  $localPrice: Number
+  $localWage: Number
+) {
+  save_datapoints_datapoint_Entry(
+    quarter: $quarterId
+    country: $countryId
+    price: $price
+    wage: $wage
+    localCurrency: $localCurrency
+    localPrice: $localPrice
+    localWage: $localWage
+  ) {
+    id
+  }
+}

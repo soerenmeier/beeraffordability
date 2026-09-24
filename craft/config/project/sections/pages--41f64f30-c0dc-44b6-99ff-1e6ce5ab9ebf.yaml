@@ -1,0 +1,27 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  -
+    uid: c5316ae1-e1ac-492c-8076-5e3f0a069cb5 # Page
+  -
+    uid: d335e81b-537d-4e38-acf6-4df8aceac695 # Home
+handle: pages
+maxAuthors: 1
+minAuthors: 1
+name: Pages
+previewTargets:
+  -
+    label: 'Primary entry page'
+    refresh: '1'
+    urlFormat: '{url}'
+propagationMethod: all
+siteSettings:
+  6b9e4bf0-09c7-4a60-859e-53a218da1851: # BeerAffordability
+    enabledByDefault: true
+    hasUrls: true
+    template: null
+    uriFormat: '{parent.uri}/{slug}'
+structure:
+  maxLevels: null
+  uid: a44106dc-b73b-4e28-adbf-3b6efd5e96d4
+type: structure

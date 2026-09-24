@@ -1,0 +1,13 @@
+query DatapointsForQuarter($quarterId: [QueryArgument]) {
+  entries(section: "datapoints", relatedTo: $quarterId, limit: null) {
+    ... on datapoint_Entry {
+      id
+      quarter {
+        id
+      }
+      country {
+        id
+      }
+    }
+  }
+}

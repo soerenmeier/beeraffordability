@@ -1,0 +1,22 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  -
+    uid: aeda0add-b07e-4866-a0ba-61c3c18230ef # Datapoint
+handle: datapoints
+maxAuthors: 1
+minAuthors: 1
+name: Datapoints
+previewTargets:
+  -
+    label: 'Primary entry page'
+    refresh: '1'
+    urlFormat: '{url}'
+propagationMethod: all
+siteSettings:
+  6b9e4bf0-09c7-4a60-859e-53a218da1851: # BeerAffordability
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
+type: channel

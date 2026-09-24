@@ -1,14 +1,97 @@
-dateModified: 1790202796
+dateModified: 1790216674
+elementSources:
+  craft\elements\Entry:
+    -
+      key: 'section:41f64f30-c0dc-44b6-99ff-1e6ce5ab9ebf' # Pages
+      page: Entries
+      type: native
+    -
+      heading: Data
+      key: 'heading:71b5079f-7867-41d3-b455-d1b50dba1460'
+      page: Entries
+      type: heading
+    -
+      defaultSort:
+        - postDate
+        - desc
+      defaultViewMode: ''
+      disabled: false
+      key: 'section:e7450e6b-2ab7-4769-bd6d-5fd8a06bdebd' # Datapoints
+      page: Entries
+      tableAttributes:
+        - status
+        - postDate
+        - expiryDate
+        - link
+      type: native
+    -
+      heading: Fixed
+      key: 'heading:a049e5a9-5bee-423d-9090-509eaac861a4'
+      page: Entries
+      type: heading
+    -
+      key: 'section:05ccd371-b38d-424f-8ab8-b0af4a3da046' # Countries
+      page: Entries
+      type: native
+    -
+      key: 'section:9485fef3-79b0-404e-adc9-55e806f10318' # Quarters
+      page: Entries
+      type: native
+    -
+      heading: ''
+      key: 'heading:e896c0b6-bd6b-46a4-92b2-95d86e9d7783'
+      page: Entries
+      type: heading
+    -
+      defaultSort:
+        - postDate
+        - desc
+      defaultViewMode: ''
+      disabled: false
+      key: '*'
+      page: Entries
+      tableAttributes:
+        - status
+        - section
+        - postDate
+        - expiryDate
+        - link
+      type: native
 email:
   fromEmail: soeren@meierlabs.ch
   fromName: BeerAffordability
   transportType: craft\mail\transportadapters\Sendmail
 meta:
   __names__:
+    3cb2c5ec-e4be-40f4-9a45-cd65f731eb27: Price # Price
+    05ccd371-b38d-424f-8ab8-b0af4a3da046: Countries # Countries
     6b9e4bf0-09c7-4a60-859e-53a218da1851: BeerAffordability # BeerAffordability
+    6d075d2a-2731-4b2b-8b36-3153c389fbf2: Navigation # Navigation
+    9b0eb533-30aa-484a-9a5e-37f1f10746fb: Link # Link
+    9bd6bbfc-6e16-4af1-8f3a-0dd4df579f30: 'Local Wage' # Local Wage
+    41f64f30-c0dc-44b6-99ff-1e6ce5ab9ebf: Pages # Pages
+    80be9466-bdfe-461c-9d47-6005ddfb20f8: 'Local Price' # Local Price
+    82ef4528-cc1b-41d8-bde7-e0f7ef4501f6: Country # Country
+    241b2ef6-9c96-403e-bdda-3b4dea967916: Currency # Currency
+    537ff796-956c-45d6-a5d3-206400c6e34b: Link # Link
     763a4ebe-8f17-4123-a492-0327a2fad76b: 'Public Schema' # Public Schema
+    9485fef3-79b0-404e-adc9-55e806f10318: Quarters # Quarters
+    14441b6e-2206-47dd-b664-543f831ddaa3: Wage # Wage
+    4798411b-98e5-4164-b8e2-c2e367a1ff84: Quarter # Quarter
+    aeda0add-b07e-4866-a0ba-61c3c18230ef: Datapoint # Datapoint
     c02cb380-908d-4c39-975d-e97bc52d6111: BeerAffordability # BeerAffordability
+    c9fa2b5e-8aea-46d5-a1de-c417c7cbab7c: Footer # Footer
+    c664c346-5d38-45f3-865a-00f913d4a977: Intro # Intro
+    c5316ae1-e1ac-492c-8076-5e3f0a069cb5: Page # Page
+    ca0db582-a1c8-44f6-96fa-4b979fb2b135: Country # Country
+    cfc030cd-e65c-4309-91cd-3c1d01f239d6: 'Page title' # Page title
+    d335e81b-537d-4e38-acf6-4df8aceac695: Home # Home
+    ded104bf-4d6a-42ed-bd19-6744c7f16cf4: 'Nav Item' # Nav Item
+    e869ab09-6402-4293-a128-a562a2b6e67e: Button # Button
+    e7450e6b-2ab7-4769-bd6d-5fd8a06bdebd: Datapoints # Datapoints
     f7a8dd79-523e-41ac-9080-6215569df6a0: Endpoint # Endpoint
+    f296fdf2-6fe0-4d61-9bed-56ce0e13bba9: Mutation # Mutation
+    ffeaceb2-43a4-4e13-bce1-29e84b2784ef: Quarter # Quarter
 plugins:
   ckeditor:
     edition: standard
