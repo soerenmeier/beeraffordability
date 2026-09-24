@@ -1,12 +1,53 @@
+fragment Html on CkeditorMarkup {
+  html
+}
+
+fragment Link on LinkData {
+  url
+  label
+  defaultLabel
+  target
+}
+
+fragment Btn on btn_Entry {
+  btn: btnLink {
+    ...Link
+  }
+}
+
+fragment PageIntro on pageIntroCke_CkeditorField {
+  chunks {
+    ...Html
+    ...Btn
+  }
+}
+
 query ($uri: [String], $siteId: [QueryArgument]) {
-  # entry(uri: $uri, siteId: $siteId) {
-  entry: crelteStarterEntry(uri: $uri, siteId: $siteId) {
+  entry(uri: $uri, siteId: $siteId) {
     id
     siteId
     url
+    slug
     sectionHandle
     typeHandle
     title
-    cpUrl
+    ... on home_Entry {
+      pageTitle
+      pageIntroCke {
+        ...PageIntro
+      }
+    }
+    ... on page_Entry {
+      pageTitle
+      pageIntroCke {
+        ...PageIntro
+      }
+      ctnCke {
+        chunks {
+          ...Html
+          ...Btn
+        }
+      }
+    }
   }
 }

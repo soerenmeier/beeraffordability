@@ -8,8 +8,8 @@
 </script>
 
 <script>
-	import Footer from './components/Footer.svelte';
-	import Header from './components/Header.svelte';
+	import Footer from './components/footer/Footer.svelte';
+	import Header from './components/header/Header.svelte';
 
 	/** @type {import('crelte').AppProps} */
 	let { route } = $props();
@@ -23,7 +23,7 @@
 	<title>{entry?.title ?? 'Not Found'}</title>
 </svelte:head>
 
-<Header {entry} />
+<Header />
 
 <!-- update entire component if page changes -->
 {#key entry?.url}
@@ -32,4 +32,4 @@
 	</div>
 {/key}
 
-<Footer {entry} />
+<Footer />

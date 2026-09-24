@@ -1,0 +1,84 @@
+$bpTablet: 768px;
+$bpDesktop: 1111px;
+
+@mixin tablet {
+	@media (min-width: $bpTablet) {
+		@content;
+	}
+}
+
+@mixin max-tablet {
+	@media (max-width: calc($bpTablet - 1px)) {
+		@content;
+	}
+}
+
+@mixin desktop {
+	@media (min-width: $bpDesktop) {
+		@content;
+	}
+}
+
+@mixin max-desktop {
+	@media (max-width: calc($bpDesktop - 1px)) {
+		@content;
+	}
+}
+
+@mixin hover {
+	@media (hover: hover) {
+		@content;
+	}
+}
+
+@mixin hover-tablet {
+	@media (min-width: $bpTablet) and (hover: hover) {
+		@content;
+	}
+}
+
+@mixin hover-desktop {
+	@media (min-width: $bpDesktop) and (hover: hover) {
+		@content;
+	}
+}
+
+@mixin wrap {
+	padding-inline: var(--sx-body);
+}
+
+@mixin body-xl {
+	font-size: var(--body-xl);
+	line-height: var(--body-lh-xl);
+}
+
+@mixin body-sm {
+	font-size: var(--body-sm);
+	line-height: var(--body-lh-sm);
+}
+
+@mixin h1 {
+	font-weight: 900;
+	font-size: var(--h1);
+	line-height: var(--hl1);
+	text-transform: uppercase;
+}
+
+@mixin h2 {
+	font-weight: 900;
+	font-size: var(--h2);
+	line-height: var(--hl2);
+	text-transform: uppercase;
+}
+
+@mixin h3 {
+	font-weight: 900;
+	font-size: var(--h3);
+	line-height: var(--hl3);
+}
+
+@mixin h4 {
+	font-weight: 700;
+	font-size: var(--h4);
+	line-height: var(--hl4);
+}

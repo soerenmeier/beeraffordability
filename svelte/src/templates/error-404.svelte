@@ -1,6 +1,10 @@
 <script>
-	let { entry } = $props();
+	import PageIntro from '@/components/intro/PageIntro.svelte';
 </script>
 
-<h1>404</h1>
-<p>The page was not found</p>
+<PageIntro
+	title="Page not found"
+	pageIntroCke={{
+		chunks: [{ btns: [{ url: '/', label: 'Back to Homepage' }] }],
+	}}
+/>

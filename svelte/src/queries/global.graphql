@@ -1,6 +1,30 @@
+fragment Link on LinkData {
+  url
+  label
+  defaultLabel
+  target
+}
+
 query ($siteId: [QueryArgument]) {
-  # header: globalSet(handle: "header", siteId: $siteId) {
-  header: crelteStarterGlobal(handle: "header", siteId: $siteId) {
-    title
+  footer: globalSet(handle: "footer", siteId: $siteId) {
+    ... on footer_GlobalSet {
+      navigation {
+        ... on navItem_Entry {
+          navLink {
+            ...Link
+          }
+        }
+      }
+    }
+  }
+  currentQuarter: entry(
+    section: "quarters"
+    orderBy: "postDate desc"
+    siteId: $siteId
+  ) {
+    ... on quarter_Entry {
+      id
+      title
+    }
   }
 }

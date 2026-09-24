@@ -1,0 +1,47 @@
+.rt,
+.rt .html {
+	> :first-child {
+		margin-top: 0 !important;
+	}
+
+	> :last-child {
+		margin-bottom: 0 !important;
+	}
+}
+
+.rt .html {
+	p,
+	h2,
+	h3,
+	ul,
+	ol {
+		margin-top: 1em;
+	}
+
+	strong {
+		font-weight: 600;
+	}
+
+	i,
+	em {
+		font-style: italic;
+	}
+
+	a {
+		text-decoration: underline;
+		text-underline-offset: 0.15em;
+	}
+
+	ul,
+	ol {
+		padding-left: 1.5em;
+	}
+
+	ul {
+		list-style: disc;
+	}
+}
+
+.rt .buttons {
+	margin-block: 1rem;
+}

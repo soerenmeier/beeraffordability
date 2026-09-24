@@ -1,13 +1,141 @@
 @use 'vars' as *;
 @use 'resets';
+@use 'rt';
+
+:root {
+	// colors
+	--white: #fff;
+	--beige: #f6f3eb;
+	--border-beige: #d8d3c5;
+	--beige-dark: #ece7db;
+	--gray: #4a4944;
+	--gray-2: #a3a3a3;
+	--black: #111;
+	--yellow: #fcd34d;
+	--green: #047857;
+	--red: #b91c1c;
+
+	// fonts
+	--font-sans: 'Hanken Grotesk', sans-serif;
+	--font-mono: 'JetBrains Mono', monospace;
+
+	// paragraph
+	--body-xl: 1rem;
+	--body-lh-xl: 1.5rem;
+	--body-md: 0.875rem;
+	--body-lh-md: 1.3125rem;
+	--body-sm: 0.75rem;
+	--body-lh-sm: 1rem;
+
+	// heading
+	--h1: 2rem;
+	--hl1: 2.125rem;
+	--h2: 1.875rem;
+	--hl2: 2rem;
+	--h3: 1.25rem;
+	--hl3: 1.375rem;
+	--h4: 1.125rem;
+	--hl4: 1.1875rem;
+
+	// spacings
+	--sx-body: 1.25rem;
+
+	@include tablet {
+		// paragraph
+		--body-xl: 1.125rem;
+		--body-lh-xl: 1.75rem;
+		--body-md: 1rem;
+		--body-lh-md: 1.5rem;
+		--body-sm: 0.875rem;
+		--body-lh-sm: 1.375rem;
+
+		// heading
+		--h1: 3rem;
+		--hl1: 3.125rem;
+		--h2: 2.25rem;
+		--hl2: 2.5rem;
+		--h3: 2rem;
+		--hl3: 2.125rem;
+		--h4: 1.25rem;
+		--hl4: 1.375rem;
+	}
+
+	@include desktop {
+		// paragraph
+		--body-xl: 1.25rem;
+		--body-lh-xl: 1.75rem;
+		--body-sm: 1rem;
+		--body-lh-sm: 1.5rem;
+
+		--h1: 4rem;
+		--hl1: 4.125rem;
+		--h2: 2.5rem;
+		--hl2: 2.75rem;
+		--h3: 2.25rem;
+		--hl3: 2.375rem;
+		--h4: 1.5rem;
+		--hl4: 1.625rem;
+	}
+}
 
 html {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	font-smooth: always;
+	font-size: 16px;
 }
 
 body {
-	padding: 1rem;
-	line-height: 1.4;
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+	font-family: var(--font-sans);
+	color: var(--black);
+	font-size: var(--body-md);
+	line-height: var(--body-lh-md);
+	font-weight: 400;
+	background-color: var(--beige);
+}
+
+.app {
+	flex: 1;
+}
+
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	border: 0;
+}
+
+.wrap {
+	@include wrap;
+}
+
+.body-xl {
+	@include body-xl;
+}
+
+.body-sm {
+	@include body-sm;
+}
+
+.h1 {
+	@include h1;
+}
+
+.h2 {
+	@include h2;
+}
+
+.h3 {
+	@include h3;
+}
+
+.h4 {
+	@include h4;
 }

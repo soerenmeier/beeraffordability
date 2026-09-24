@@ -1,0 +1,19 @@
+# we expect only one entry per country
+query ($id: [QueryArgument], $siteId: [QueryArgument]) {
+  datapoints: entries(
+    section: "datapoints"
+    relatedTo: $id
+    siteId: $siteId
+    limit: null
+  ) {
+    ... on datapoint_Entry {
+      country {
+        title
+      }
+      # per 0.5l
+      price
+      # per h
+      wage
+    }
+  }
+}
