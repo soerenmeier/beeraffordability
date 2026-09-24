@@ -1,0 +1,40 @@
+services:
+  craft:
+    image: registry.s2.goodserver.ch/beeraffordability/craft:latest
+    restart: on-failure
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    volumes:
+      # 3000
+      - "./craft/.env:/app/.env:ro"
+      - ./craft/storage/logs:/app/storage/logs
+      - ./craft/storage/backups:/app/storage/backups
+      - ./craft/web/assets:/app/web/assets
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.beeraffordability-craft.rule=Host(`admin.beeraffordability.com`)"
+      - "traefik.http.routers.beeraffordability-craft.entrypoints=websecure"
+      - "traefik.http.routers.beeraffordability-craft.tls.certresolver=letsencrypt"
+      - "traefik.http.services.beeraffordability-craft.loadbalancer.server.port=80"
+    networks:
+      - traefik
+
+  svelte:
+    image: registry.s2.goodserver.ch/beeraffordability/svelte:latest
+    restart: on-failure
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    volumes:
+      - "./craft/.env:/craft/.env:ro"
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.beeraffordability-svelte.rule=Host(`beeraffordability.com`) || Host(`www.beeraffordability.com`)"
+      - "traefik.http.routers.beeraffordability-svelte.entrypoints=websecure"
+      - "traefik.http.routers.beeraffordability-svelte.tls.certresolver=letsencrypt"
+      - "traefik.http.services.beeraffordability-svelte.loadbalancer.server.port=8080"
+    networks:
+      - traefik
+
+networks:
+  traefik:
+    external: true

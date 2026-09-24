@@ -1,4 +1,4 @@
-dateModified: 1790222861
+dateModified: 1790260276
 elementSources:
   craft\elements\Entry:
     -
@@ -65,7 +65,7 @@ meta:
   __names__:
     3cb2c5ec-e4be-40f4-9a45-cd65f731eb27: Price # Price
     05ccd371-b38d-424f-8ab8-b0af4a3da046: Countries # Countries
-    6b9e4bf0-09c7-4a60-859e-53a218da1851: BeerAffordability # BeerAffordability
+    6b9e4bf0-09c7-4a60-859e-53a218da1851: 'Beer Affordability' # Beer Affordability
     6d075d2a-2731-4b2b-8b36-3153c389fbf2: Navigation # Navigation
     7c86f055-508d-4c1f-af05-b668ab956b63: Content # Content
     9b0eb533-30aa-484a-9a5e-37f1f10746fb: Link # Link

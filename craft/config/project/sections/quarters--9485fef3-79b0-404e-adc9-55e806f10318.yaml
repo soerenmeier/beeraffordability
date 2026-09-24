@@ -9,7 +9,7 @@ minAuthors: 1
 name: Quarters
 propagationMethod: all
 siteSettings:
-  6b9e4bf0-09c7-4a60-859e-53a218da1851: # BeerAffordability
+  6b9e4bf0-09c7-4a60-859e-53a218da1851: # Beer Affordability
     enabledByDefault: true
     hasUrls: false
     template: null

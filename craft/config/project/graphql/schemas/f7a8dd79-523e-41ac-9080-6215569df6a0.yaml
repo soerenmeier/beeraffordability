@@ -1,7 +1,7 @@
 isPublic: false
 name: Endpoint
 scope:
-  - 'sites.6b9e4bf0-09c7-4a60-859e-53a218da1851:read' # BeerAffordability
+  - 'sites.6b9e4bf0-09c7-4a60-859e-53a218da1851:read' # Beer Affordability
   - 'sections.05ccd371-b38d-424f-8ab8-b0af4a3da046:read' # Countries
   - 'sections.e7450e6b-2ab7-4769-bd6d-5fd8a06bdebd:read' # Datapoints
   - 'sections.41f64f30-c0dc-44b6-99ff-1e6ce5ab9ebf:read' # Pages

@@ -5,8 +5,8 @@
 	let { datapoints }: { datapoints: Datapoint[] } = $props();
 
 	let maxMinutes = $derived(Math.max(...datapoints.map(d => d.minutes)));
-	let first = $derived(datapoints.slice(0, 5));
-	let last = $derived(datapoints.slice(-5).reverse());
+	let first = $derived(datapoints.slice(0, 7));
+	let last = $derived(datapoints.slice(-7).reverse());
 </script>
 
 <div class="top-stats wrap">

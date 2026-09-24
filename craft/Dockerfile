@@ -1,12 +1,14 @@
 # Stage 1: Build the Craft CMS image with Composer installed
-FROM ghcr.io/craftcms/image:8.2
+FROM ghcr.io/craftcms/image:8.4
+
+# Override PHP configuration via environment variables
+ENV PHP_UPLOAD_MAX_FILESIZE=28M
+ENV PHP_POST_MAX_SIZE=28M
+ENV PHP_MAX_EXECUTION_TIME=300
 
 # Install Composer manually
 USER root
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
-
-# Install mysql dump
-RUN apt install -y mysql-client
 
 # Copy additional configuration files
 COPY docker/nginx.conf /etc/nginx/nginx.conf

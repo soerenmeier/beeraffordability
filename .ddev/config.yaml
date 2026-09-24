@@ -5,16 +5,17 @@ php_version: "8.4"
 webserver_type: nginx-fpm
 xdebug_enabled: false
 additional_hostnames:
-    - admin.beeraffordability
+  - admin.beeraffordability
 additional_fqdns: []
 database:
-    type: mysql
-    version: "8.0"
+  type: postgres
+  version: "16"
 use_dns_when_possible: true
 composer_root: craft
 composer_version: "2"
 web_environment:
-    - CRAFT_CMD_ROOT=/var/www/html/craft
+  - CRAFT_CMD_ROOT=/var/www/html/craft
+  - CRAFT_DB_CHARSET=utf8
 nodejs_version: "24"
 corepack_enable: false
 
