@@ -11,6 +11,7 @@
 <script>
 	import PageIntro from '@/components/intro/PageIntro.svelte';
 	import TopStats from '@/components/stats/TopStats.svelte';
+	import AllCountries from '@/components/stats/AllCountries.svelte';
 
 	let { entry, datapoints } = $props();
 </script>
@@ -21,3 +22,5 @@
 />
 
 <TopStats {datapoints} />
+
+<AllCountries {datapoints} />
