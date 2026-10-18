@@ -43,8 +43,11 @@ $bpDesktop: 1111px;
 	}
 }
 
+// content is at most --max-width wide and stays left aligned, while the
+// element itself (backgrounds, borders) still spans the full width
 @mixin wrap {
-	padding-inline: var(--sx-body);
+	padding-inline: var(--sx-body)
+		max(var(--sx-body), calc(100% - var(--max-width) - var(--sx-body)));
 }
 
 @mixin body-xl {
