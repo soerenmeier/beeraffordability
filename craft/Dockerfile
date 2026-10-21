@@ -1,5 +1,5 @@
 # Stage 1: Build the Craft CMS image with Composer installed
-FROM ghcr.io/craftcms/image:8.4
+FROM crelte/craft:8.4
 
 # Override PHP configuration via environment variables
 ENV PHP_UPLOAD_MAX_FILESIZE=28M
