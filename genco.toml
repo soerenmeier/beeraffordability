@@ -1,0 +1,25 @@
+# genco (gs2): what a release builds and keeps, see `genco docs`; no
+# update-statuses schedule: staticStatuses is on only with CACHING=true
+shared = [
+	"craft/.env",
+	"craft/storage",
+	"craft/web/assets",
+	"craft/web/cpresources",
+]
+
+[[build]]
+dir = "craft"
+run = "composer install --no-dev --no-interaction --prefer-dist --optimize-autoloader"
+
+[[build]]
+dir = "svelte"
+run = "npm ci && npm run build"
+
+[[after-switch]]
+dir = "craft"
+run = "php craft up --interactive=0"
+
+[[worker]]
+name = "craft-queue"
+dir = "craft"
+run = "php craft queue/listen --verbose"
